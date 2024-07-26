@@ -57,8 +57,9 @@ if st.button("Generate Plan"):
     inputs = {'daily_tasks': daily_tasks}
     final_output = daily_planner_chain(inputs)
     
-    st.subheader("Daily Tasks")
-    st.write(final_output["daily_tasks"])
+    st.subheader("Daily Plan Overview")
+    for task in daily_tasks:
+        st.markdown(f"- **{task}**")
     
     st.subheader("Prioritized Tasks")
     st.write(final_output["prioritized_tasks"])
