@@ -9,6 +9,13 @@ langchain = "*"
 openai = "*"
 langchain-community = "*"
 streamlit = "*"
+wikipedia = "*"
+numexpr = "*"
+google-search-results = "*"
+pypdf = "*"
+unstructured = "*"
+faiss-cpu = "*"
+
 
 [dev-packages]
 
